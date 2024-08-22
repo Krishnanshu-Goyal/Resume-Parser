@@ -206,24 +206,14 @@ st.set_page_config(
 
 def run():
     
-    image_path = "/Users/krish/Desktop/AI-Resume-Analyzer-main/App/Logo/logo.png"
+    
     resume_score=0
     # Define the desired width and height
     image_width = 100
     image_height = 70
     bottom_padding = 30  # in pixels
 
-    # Read and encode the image
-    with open(image_path, "rb") as image_file:
-        encoded_image = base64.b64encode(image_file.read()).decode()
-
-    # Use CSS to style the image and position it in the top right corner with bottom padding
-    image_html = f"""
-        <div style="position: absolute; top: 0; right: 0; padding-bottom: {bottom_padding}px; z-index: 30;">
-            <img src="data:image/png;base64,{encoded_image}" style="width: {image_width}px; height: {image_height}px;">
-        </div>
-    """
-
+    
     # Display the logo image using st.markdown
     st.markdown(image_html, unsafe_allow_html=True)
     image_path = "/Users/krish/Desktop/AI-Resume-Analyzer-main/App/Logo/RESUM.png"
