@@ -1,0 +1,2 @@
+EMAIL_ADDRESS=temporarytry@gmail.com 
+EMAIL_PASSWORD=temporarytry@12
